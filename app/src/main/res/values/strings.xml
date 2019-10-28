@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">booksv2</string>
+    <string name="phone">phone</string>
+    <string name="record_list">record_list</string>
+    <string name="save_record">save_record</string>
+    <string name="age">age</string>
+    <string name="name">name</string>
+    <string name="textview">TextView</string>
+</resources>
