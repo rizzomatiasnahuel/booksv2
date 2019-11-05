@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     EditText mEdtName, mEdtAge, mEdtPhone;
     Button mBtnAdd, mBtnList;
 
+    public static SQLiteHelper SQLiteHelper;
 
 
     @Override
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RecordListActivity.class));
             }
         });
+
+
+
 
 
 

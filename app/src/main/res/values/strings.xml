@@ -6,4 +6,7 @@
     <string name="age">age</string>
     <string name="name">name</string>
     <string name="textview">TextView</string>
+    <string name="phone_here">Phone Here</string>
+    <string name="age_here">Age Here</string>
+    <string name="name_here">Name Here</string>
 </resources>
