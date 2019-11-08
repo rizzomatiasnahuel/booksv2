@@ -15,6 +15,9 @@ public class SQLiteHelper extends SQLiteOpenHelper{
                  SQLiteDatabase.CursorFactory factory,
                  int version){
         super(context, name, factory, version);
+
+
+
     }
 
     public void queryData(String sql){
