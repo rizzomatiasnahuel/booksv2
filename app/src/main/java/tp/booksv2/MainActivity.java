@@ -39,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //creating database
-        mSQLiteHelper = new SQLiteHelper(this, "RECORDDB.sqlite", null, 1);
+        mSQLiteHelper = new SQLiteHelper(this, "RECORDDB.sqlite", null, 2);
 
         //creating table in database
-        mSQLiteHelper.queryData( " CREATE TABLE IF NOT EXISTS  RECORD ( id INTEGER PRIMARY KEY AUTOINCREMENT , name VARCHAR, age VARCHAR, phone VARCHAR");
+        mSQLiteHelper.queryData( " CREATE TABLE IF NOT EXISTS  RECORD ( id INTEGER PRIMARY KEY AUTOINCREMENT , name VARCHAR, age VARCHAR, phone VARCHAR)");
 
 
         //add record to sqlite
