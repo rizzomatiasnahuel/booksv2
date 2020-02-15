@@ -1,0 +1,47 @@
+[33mcommit bf6af9c2969fdb4d2a0164813623174a1c8841f1[m[33m ([m[1;36mHEAD -> [m[1;32mrama6_con_los_cambios_de_campos[m[33m, [m[1;31morigin/rama4_[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mrama4_[m[33m, [m[1;32mmaster[m[33m)[m
+Author: rizzomatinahuel <rizzomatiasnahuel@gmail.com>
+Date:   Sat Nov 9 23:52:26 2019 -0300
+
+    CRUD COMPLETO CON LISTVIEW Y SQLITE
+
+[33mcommit d823e4fa1a878f37c48a63d7e1bf55f99669ca9f[m
+Author: rizzomatinahuel <rizzomatiasnahuel@gmail.com>
+Date:   Sat Nov 9 22:50:38 2019 -0300
+
+     ajuste resolucion telefono
+
+[33mcommit 43ddf78beaae0efa22876db86cbf227d326bb2bb[m[33m ([m[1;31morigin/rama3_[m[33m)[m
+Author: josmar torres <josmar.torres3@gmail.com>
+Date:   Fri Nov 8 11:22:19 2019 -0500
+
+    fix crash and upgrade sqlite version
+
+[33mcommit 9ac852009bfba9219a97e46b2ebb8385406207c4[m[33m ([m[1;32mrama3_[m[33m)[m
+Author: rizzomatinahuel <rizzomatiasnahuel@gmail.com>
+Date:   Thu Nov 7 21:54:36 2019 -0300
+
+    tercera version
+
+[33mcommit c2b9607261d0e2dcfe79c707bd057d83a4be2aa3[m[33m ([m[1;31morigin/rama2_[m[33m, [m[1;32mrama2_[m[33m)[m
+Author: rizzomatinahuel <rizzomatiasnahuel@gmail.com>
+Date:   Mon Nov 4 22:21:48 2019 -0300
+
+    segunda version
+
+[33mcommit fc0f746153b82c260607dd3604ca55ae16f19d7f[m
+Author: rizzomatinahuel <rizzomatiasnahuel@gmail.com>
+Date:   Mon Nov 4 21:51:50 2019 -0300
+
+    segunda version
+
+[33mcommit d5bdb62bb265873a730628e99609d13d85046ca9[m
+Author: rizzomatinahuel <rizzomatiasnahuel@gmail.com>
+Date:   Sun Oct 27 21:35:36 2019 -0300
+
+     Second commit
+
+[33mcommit 9cf5e2e0e55bc5f655566fe3802d3a8c7bbf942b[m
+Author: rizzomatinahuel <rizzomatiasnahuel@gmail.com>
+Date:   Sun Oct 27 21:12:05 2019 -0300
+
+     primer commit

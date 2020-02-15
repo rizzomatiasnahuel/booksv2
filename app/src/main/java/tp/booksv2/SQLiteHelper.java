@@ -26,34 +26,58 @@ public class SQLiteHelper extends SQLiteOpenHelper{
     }
 
     //insertData
-    public void insertData(String name, String age, String phone){
+    public void insertData(String TITULO,
+                           String AUTOR,
+                           String SINOPSIS,
+                           String FECHA_DE_PUBLICACION,
+                           String EDITORIAL,
+                           String CANTIDAD_DE_PAGINAS,
+                           String IDIOMA,
+                           String CATEGORIA){
         SQLiteDatabase database = getWritableDatabase();
         //query to insert record in database table
-        String sql = "INSERT INTO RECORD VALUES(NULL, ?, ?, ?)"; //where "RECORD" is table name in database we will create in mainActivity
+        String sql = "INSERT INTO LIBROS VALUES(NULL, ?, ?, ?, ?, ?, ?, ?, ?)"; //where "RECORD" is table name in database we will create in mainActivity
 
         SQLiteStatement statement = database.compileStatement(sql);
         statement.clearBindings();
 
-        statement.bindString(1, name);
-        statement.bindString(2, age);
-        statement.bindString(3, phone);
-
+        statement.bindString(1, TITULO);
+        statement.bindString(2, AUTOR);
+        statement.bindString(3, SINOPSIS);
+        statement.bindString(4, FECHA_DE_PUBLICACION);
+        statement.bindString(5, EDITORIAL);
+        statement.bindString(6, CANTIDAD_DE_PAGINAS);
+        statement.bindString(7, IDIOMA);
+        statement.bindString(8, CATEGORIA);
         statement.executeInsert();
     }
 
     //updateData
-    public void updateData(String name, String age, String phone, int id){
+    public void updateData(String TITULO,
+                           String AUTOR,
+                           String SINOPSIS,
+                           String FECHA_DE_PUBLICACION,
+                           String EDITORIAL,
+                           String CANTIDAD_DE_PAGINAS,
+                           String IDIOMA,
+                           String CATEGORIA,
+                           int id){
         SQLiteDatabase database = getWritableDatabase();
         //query to update record
-        String sql = "UPDATE RECORD SET name=?, age=?, phone=?  WHERE id=?";
+        String sql = "UPDATE LIBROS SET TITULO=?, AUTOR=?, SINOPSIS=?, FECHA_DE_PUBLICACION=?, EDITORIAL=?, CANTIDAD_DE_PAGINAS=?, IDIOMA=?, CATEGORIA=?  WHERE id=?";
 
         SQLiteStatement statement = database.compileStatement(sql);
 
-        statement.bindString(1, name);
-        statement.bindString(2, age);
-        statement.bindString(3, phone);
+        statement.bindString(1, TITULO);
+        statement.bindString(2, AUTOR);
+        statement.bindString(3, SINOPSIS);
+        statement.bindString(4, FECHA_DE_PUBLICACION);
+        statement.bindString(5, EDITORIAL);
+        statement.bindString(6, CANTIDAD_DE_PAGINAS);
+        statement.bindString(7, IDIOMA);
+        statement.bindString(8, CATEGORIA);
 
-        statement.bindDouble(4, (double)id);
+        statement.bindDouble(9, (double)id);
 
         statement.execute();
         database.close();
@@ -63,7 +87,7 @@ public class SQLiteHelper extends SQLiteOpenHelper{
     public void deleteData(int id){
         SQLiteDatabase database = getWritableDatabase();
         //query to delete record using id
-        String sql = "DELETE FROM RECORD WHERE id=?";
+        String sql = "DELETE FROM LIBROS WHERE id=?";
 
         SQLiteStatement statement = database.compileStatement(sql);
         statement.clearBindings();

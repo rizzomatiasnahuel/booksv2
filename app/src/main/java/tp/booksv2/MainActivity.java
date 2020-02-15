@@ -43,10 +43,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //creating database
-        mSQLiteHelper = new SQLiteHelper(this, "RECORDDB.sqlite", null, 2);
+        mSQLiteHelper = new SQLiteHelper(this, "LIBROSBD.sqlite", null, 2);
 
         //creating table in database
-        mSQLiteHelper.queryData( " CREATE TABLE IF NOT EXISTS  RECORD ( id INTEGER PRIMARY KEY AUTOINCREMENT , name VARCHAR, age VARCHAR, phone VARCHAR)");
+        mSQLiteHelper.queryData( " CREATE TABLE IF NOT EXISTS  LIBROS ( id INTEGER PRIMARY KEY AUTOINCREMENT , " +
+                "TITULO TEXT NOT NULL, " +
+                "AUTOR TEXT, " +
+                "SINOPSIS TEXT, " +
+                "FECHA_DE_PUBLICACION TEXT, " +
+                "EDITORIAL TEXT, " +
+                "CANTIDAD_DE_PAGINAS TEXT, " +
+                "IDIOMA TEXT, " +
+                "CATEGORIA TEXT)");
 
 
         //add record to sqlite
