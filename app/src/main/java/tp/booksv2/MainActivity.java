@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
         mEdtTitulo = findViewById(R.id.EdtTitulo);
         mEdtAutor = findViewById(R.id.EdtAutor);
         mEdtSinopsis = findViewById(R.id.EdtSinopsis);
-        mEdtFecha_de_Publicacion = findViewById(R.id.EdtTitulo);
-        mEdtEditorial = findViewById(R.id.EdtAutor);
-        mEdtCant_de_pag = findViewById(R.id.EdtSinopsis);
-        mEdtIdioma = findViewById(R.id.EdtTitulo);
-        mEdtCategoria = findViewById(R.id.EdtAutor);
+        mEdtFecha_de_Publicacion = findViewById(R.id.EdtFecha_de_Publicacion);
+        mEdtEditorial = findViewById(R.id.EdtEditorial);
+        mEdtCant_de_pag = findViewById(R.id.EdtCant_de_pag);
+        mEdtIdioma = findViewById(R.id.EdtIdioma);
+        mEdtCategoria = findViewById(R.id.EdtCategoria);
 
 
 

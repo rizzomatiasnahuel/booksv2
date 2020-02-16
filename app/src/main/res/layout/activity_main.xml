@@ -14,7 +14,6 @@
                     android:id="@+id/EdtTitulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
                     android:importantForAutofill="no"
                     android:inputType="textPersonName"
                     android:text="@string/titulo"
@@ -27,95 +26,92 @@
                     android:id="@+id/EdtAutor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:autofillHints=""
-
+                    android:importantForAutofill="no"
                     android:inputType="textPersonName"
                     android:text="@string/autor"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="LabelFor"
-                    tools:targetApi="o" />
+                    />
 
                 <EditText
                     android:id="@+id/EdtSinopsis"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:autofillHints=""
-                    android:inputType="phone"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
                     android:text="@string/sinopsis"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="LabelFor"
-                    tools:targetApi="o" />
+                     />
 
                 <EditText
                     android:id="@+id/EdtFecha_de_Publicacion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:inputType="phone"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
                     android:text="@string/edtfecha_de_publicacion"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="LabelFor"
-                    tools:targetApi="o" />
+                     />
 
                 <EditText
                     android:id="@+id/EdtEditorial"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:inputType="phone"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
                     android:text="@string/editorial"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="LabelFor"
-                    tools:targetApi="o" />
+                    />
 
                 <EditText
                     android:id="@+id/EdtCant_de_pag"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:inputType="phone"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
                     android:text="@string/cantidad_de_paginas"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="LabelFor"
-                    tools:targetApi="o" />
+                     />
 
                 <EditText
                     android:id="@+id/EdtIdioma"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:inputType="phone"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
                     android:text="@string/idioma"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="LabelFor"
-                    tools:targetApi="o" />
+                     />
 
                 <EditText
                     android:id="@+id/EdtCategoria"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:inputType="phone"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
                     android:text="@string/categoria"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="LabelFor"
-                    tools:targetApi="o" />
+                     />
 
                 <Button
                     android:id="@+id/btnList"
