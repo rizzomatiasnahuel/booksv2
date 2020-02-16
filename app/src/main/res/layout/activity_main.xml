@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:importantForAutofill="no"
                     android:inputType="textPersonName"
-                    android:hint="@string/fecha_de_publicacion"
+                    android:hint="fecha_de_publicacion"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
