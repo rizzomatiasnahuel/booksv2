@@ -22,16 +22,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/name"
+                android:text="@string/titulo"
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtName"
+                android:id="@+id/eTITULO"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/name_here"
+                android:text="@string/titulo"
                 android:textColor="#000"
                 android:textSize="20sp" />
         </TableRow>
@@ -41,16 +41,16 @@
             <TextView
                 android:layout_width="107dp"
                 android:layout_height="wrap_content"
-                android:text="@string/age"
+                android:text="@string/autor"
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtAge"
+                android:id="@+id/eAutor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/age_here"
+                android:text="@string/autor"
                 android:textColor="#000"
                 android:textSize="20sp" />
         </TableRow>
@@ -60,19 +60,112 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/phone"
+                android:text="@string/sinopsis"
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtPhone"
+                android:id="@+id/eSinopsis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/phone_here"
+                android:text="@string/sinopsis"
                 android:textColor="#000"
                 android:textSize="20sp" />
         </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/publicacion"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eFecha_de_publicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/publicacion"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/editorial"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eEditorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/editorial"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cantidad_de_paginas"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eCantidad_de_Paginas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cantidad_de_paginas"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/idioma"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eIdioma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/idioma"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </TableRow>
+
+
+
     </TableLayout>
 
 

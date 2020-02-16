@@ -49,15 +49,21 @@ public class RecordListActivity extends AppCompatActivity {
 
 
         //get all data from sqlite
-        Cursor cursor = MainActivity.mSQLiteHelper.getData("SELECT * FROM RECORD");
+        Cursor cursor = MainActivity.mSQLiteHelper.getData("SELECT * FROM LIBROS");
         mList.clear();
         while (cursor.moveToNext()){
             int id = cursor.getInt(0);
-            String name = cursor.getString(1);
-            String age = cursor.getString(2);
-            String phone = cursor.getString(3);
+            String TITULO = cursor.getString(1);
+            String AUTOR = cursor.getString(2);
+            String SINOPSIS = cursor.getString(3);
+            String FECHA_DE_PUBLICACION = cursor.getString(4);
+            String EDITORIAL = cursor.getString(5);
+            String CANTIDAD_DE_PAGINAS = cursor.getString(6);
+            String IDIOMA = cursor.getString(7);
+            String CATEGORIA = cursor.getString(8);
+
             //add to list
-            mList.add(new Model(id, name, age, phone));
+            mList.add(new Model(id,TITULO, AUTOR, SINOPSIS, FECHA_DE_PUBLICACION, EDITORIAL , CANTIDAD_DE_PAGINAS, IDIOMA, CATEGORIA));
         }
         mAdapter.notifyDataSetChanged();
         if (mList.size()==0){
@@ -79,7 +85,7 @@ public class RecordListActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (i == 0){
                             //update
-                            Cursor c = MainActivity.mSQLiteHelper.getData("SELECT id FROM RECORD");
+                            Cursor c = MainActivity.mSQLiteHelper.getData("SELECT id FROM LIBROS");
                             ArrayList<Integer> arrID = new ArrayList<Integer>();
                             while (c.moveToNext()){
                                 arrID.add(c.getInt(0));
@@ -89,7 +95,7 @@ public class RecordListActivity extends AppCompatActivity {
                         }
                         if (i==1){
                             //delete
-                            Cursor c = MainActivity.mSQLiteHelper.getData("SELECT id FROM RECORD");
+                            Cursor c = MainActivity.mSQLiteHelper.getData("SELECT id FROM LIBROS");
                             ArrayList<Integer> arrID = new ArrayList<Integer>();
                             while (c.moveToNext()){
                                 arrID.add(c.getInt(0));
@@ -137,9 +143,17 @@ public class RecordListActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.update_dialog);
         dialog.setTitle("Update");
 
-        final EditText edtName = dialog.findViewById(R.id.edtName);
-        final EditText edtAge = dialog.findViewById(R.id.edtAge);
-        final EditText edtPhone = dialog.findViewById(R.id.edtPhone);
+        final EditText EdtTitulo = dialog.findViewById(R.id.EdtTitulo);
+        final EditText EdtAutor = dialog.findViewById(R.id.EdtAutor);
+        final EditText EdtSinopsis = dialog.findViewById(R.id.EdtSinopsis);
+        final EditText EdtFecha_de_Publicacion = dialog.findViewById(R.id.EdtFecha_de_Publicacion);
+        final EditText EdtEditorial = dialog.findViewById(R.id.EdtEditorial);
+        final EditText EdtCant_de_pag = dialog.findViewById(R.id.EdtCant_de_pag);
+        final EditText EdtIdioma = dialog.findViewById(R.id.EdtIdioma);
+        final EditText EdtCategoria = dialog.findViewById(R.id.EdtCategoria);
+
+
+
         Button btnUpdate = dialog.findViewById(R.id.btnUpdate);
 
         //set width of dialog
@@ -154,9 +168,14 @@ public class RecordListActivity extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     MainActivity.mSQLiteHelper.updateData(
-                            edtName.getText().toString().trim(),
-                            edtAge.getText().toString().trim(),
-                            edtPhone.getText().toString().trim(),
+                            EdtTitulo.getText().toString().trim(),
+                            EdtAutor.getText().toString().trim(),
+                            EdtSinopsis.getText().toString().trim(),
+                            EdtFecha_de_Publicacion.getText().toString().trim(),
+                            EdtEditorial.getText().toString().trim(),
+                            EdtCant_de_pag.getText().toString().trim(),
+                            EdtIdioma.getText().toString().trim(),
+                            EdtCategoria.getText().toString().trim(),
                             position
                     );
                     dialog.dismiss();
@@ -173,16 +192,20 @@ public class RecordListActivity extends AppCompatActivity {
 
     private void updateRecordList() {
         //get all data from sqlite
-        Cursor cursor = MainActivity.mSQLiteHelper.getData("SELECT * FROM RECORD");
+        Cursor cursor = MainActivity.mSQLiteHelper.getData("SELECT * FROM LIBROS");
         mList.clear();
         while (cursor.moveToNext()){
             int id = cursor.getInt(0);
-            String name = cursor.getString(1);
-            String age = cursor.getString(2);
-            String phone = cursor.getString(3);
+            String TITULO = cursor.getString(1);
+            String AUTOR = cursor.getString(2);
+            String SINOPSIS = cursor.getString(3);
+            String FECHA_DE_PUBLICACION = cursor.getString(4);
+            String EDITORIAL = cursor.getString(5);
+            String CANTIDAD_DE_PAGINAS = cursor.getString(6);
+            String IDIOMA = cursor.getString(7);
+            String CATEGORIA = cursor.getString(8);
 
-
-            mList.add(new Model(id,name,age,phone));
+            mList.add(new Model(id,TITULO, AUTOR, SINOPSIS, FECHA_DE_PUBLICACION, EDITORIAL , CANTIDAD_DE_PAGINAS, IDIOMA, CATEGORIA));
         }
         mAdapter.notifyDataSetChanged();
     }

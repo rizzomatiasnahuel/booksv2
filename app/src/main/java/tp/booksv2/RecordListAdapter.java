@@ -38,7 +38,7 @@ public class RecordListAdapter extends BaseAdapter {
     }
 
     private class ViewHolder{
-        TextView txtName, txtAge, txtPhone;
+        TextView eTITULO, eAutor, eSinopsis, eFecha_de_publicacion, eEditorial, eCantidad_de_Paginas, eIdioma,  eCategoria ;
     }
 
     @Override
@@ -50,9 +50,16 @@ public class RecordListAdapter extends BaseAdapter {
         if (row==null){
             LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(layout, null);
-            holder.txtName = row.findViewById(R.id.txtName);
-            holder.txtAge = row.findViewById(R.id.txtAge);
-            holder.txtPhone = row.findViewById(R.id.txtPhone);
+            holder.eTITULO = row.findViewById(R.id.eTITULO);
+            holder.eAutor = row.findViewById(R.id.eAutor);
+            holder.eSinopsis = row.findViewById(R.id.eSinopsis);
+            holder.eFecha_de_publicacion = row.findViewById(R.id.eFecha_de_publicacion);
+            holder.eEditorial = row.findViewById(R.id.eEditorial);
+            holder.eCantidad_de_Paginas = row.findViewById(R.id.eCantidad_de_Paginas);
+            holder.eIdioma = row.findViewById(R.id.eIdioma);
+            holder.eCategoria = row.findViewById(R.id.eCategoria);
+
+
             row.setTag(holder);
         }
         else {
@@ -61,9 +68,14 @@ public class RecordListAdapter extends BaseAdapter {
 
         Model model = recordList.get(i);
 
-        holder.txtName.setText(model.getName());
-        holder.txtAge.setText(model.getAge());
-        holder.txtPhone.setText(model.getPhone());
+        holder.eTITULO.setText(model.getTITULO());
+        holder.eAutor.setText(model.getAUTOR());
+        holder.eSinopsis.setText(model.getSINOPSIS());
+        holder.eFecha_de_publicacion.setText(model.getFECHA_DE_PUBLICACION());
+        holder.eEditorial.setText(model.getEDITORIAL());
+        holder.eCantidad_de_Paginas.setText(model.getCANTIDAD_DE_PAGINAS());
+        holder.eIdioma.setText(model.getIDIOMA());
+        holder.eCategoria.setText(model.getCATEGORIA());
 
 
         return row;

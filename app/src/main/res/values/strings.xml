@@ -10,4 +10,13 @@
     <string name="age_here">Age Here</string>
     <string name="name_here">Name Here</string>
     <string name="update">update</string>
+    <string name="titulo">titulo</string>
+    <string name="autor">autor</string>
+    <string name="sinopsis">sinopsis</string>
+    <string name="edtfecha_de_publicacion">EdtFecha_de_Publicacion</string>
+    <string name="editorial">editorial</string>
+    <string name="cantidad_de_paginas">cantidad de paginas</string>
+    <string name="idioma">idioma</string>
+    <string name="categoria">categoria</string>
+    <string name="publicacion">publicacion</string>
 </resources>
