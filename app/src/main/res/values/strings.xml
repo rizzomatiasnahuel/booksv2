@@ -20,4 +20,5 @@
     <string name="categoria">categoria</string>
     <string name="publicacion">publicacion</string>
     <string name="cant_de_pag">cant de pag</string>
+    <string name="fecha_de_publicacion">fecha_de_publicacion</string>
 </resources>

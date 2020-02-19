@@ -63,7 +63,7 @@ public class RecordListActivity extends AppCompatActivity {
             String CATEGORIA = cursor.getString(8);
 
             //add to list
-            mList.add(new Model(id,TITULO, AUTOR, SINOPSIS, FECHA_DE_PUBLICACION, EDITORIAL , CANTIDAD_DE_PAGINAS, IDIOMA, CATEGORIA));
+            mList.add(new Model(id, TITULO, AUTOR, SINOPSIS, FECHA_DE_PUBLICACION, EDITORIAL , CANTIDAD_DE_PAGINAS, IDIOMA, CATEGORIA));
         }
         mAdapter.notifyDataSetChanged();
         if (mList.size()==0){
